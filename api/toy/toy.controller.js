@@ -3,15 +3,15 @@ import { logger } from '../../services/logger.service.js'
 
 export async function getToys(req, res) {
     try {
-        console.log(req.query);
         const filterBy = {
             txt: req.query.txt || '',
             maxPrice: +req.query.maxPrice || Infinity,
             inStock: req.query.inStock || 'all'
         }
+        // console.log('sortBy', sortBy);
         const sortBy = {
             type: req.query.type || 'created',
-            dir: req.query.dir || -1
+            dir: +req.query.dir || -1
         }
         logger.debug('Getting Toys', filterBy, sortBy)
         const toys = await toyService.query(filterBy, sortBy)

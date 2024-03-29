@@ -10,8 +10,9 @@ async function query(filterBy, sortBy) {
         const criteria = {
             name: { $regex: filterBy.txt, $options: 'i' },
             price: { $lte: filterBy.maxPrice },
-            ...(filterBy.inStock !== 'all' && {inStock: filterBy.inStock }),
         }
+        if (filterBy.inStock !== 'all') criteria.inStock = filterBy.inStock === 'inStock'
+
         const {type, dir} = sortBy
         const sort = {[type]:dir}
 
