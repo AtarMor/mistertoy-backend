@@ -8,7 +8,6 @@ export async function getToys(req, res) {
             maxPrice: +req.query.maxPrice || Infinity,
             inStock: req.query.inStock || 'all'
         }
-        // console.log('sortBy', sortBy);
         const sortBy = {
             type: req.query.type || 'created',
             dir: +req.query.dir || -1
@@ -38,7 +37,7 @@ export async function addToy(req, res) {
 
     try {
         const toy = req.body
-        toy.owner = loggedinUser
+        // toy.owner = loggedinUser
         const addedToy = await toyService.add(toy)
         res.json(addedToy)
     } catch (err) {
@@ -59,6 +58,7 @@ export async function updateToy(req, res) {
 }
 
 export async function removeToy(req, res) {
+    const { loggedinUser } = req
     try {
         const toyId = req.params.id
         await toyService.remove(toyId)

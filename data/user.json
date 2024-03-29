@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "660663ccf0a4b58f0255847d"
+  },
+  "username": "atar",
+  "password": "$2b$10$1.M/knhY4zDkH7GWMHMOUuziYl6W1FJIcC2.GjkjYhvRn4ba0QHCG",
+  "fullname": "Atar Mor",
+  "score": 0
+},
+{
+  "_id": {
+    "$oid": "6606807df0a4b58f02558481"
+  },
+  "username": "admin",
+  "password": "$2b$10$zAlVIve2gxWDy5cB/ud/ee2pThLf7ii3uZPobGjgbNy7hdlxb.7Au",
+  "fullname": "Admin",
+  "score": 0,
+  "isAdmin": true
+},
+{
+  "_id": {
+    "$oid": "6606809ff0a4b58f02558482"
+  },
+  "username": "puki",
+  "password": "$2b$10$t4svQO49bt7jJC5XodCQw.ve1/CBU1QxlZnbpjZPUnYR8oVLtXA22",
+  "fullname": "Puki Ja",
+  "score": 0
+}]

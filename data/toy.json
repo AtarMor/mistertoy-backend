@@ -1,47 +1,76 @@
-[
-  {
-    "name": "toy",
-    "price": 100,
-    "labels": [],
-    "inStock": true
+[{
+  "_id": {
+    "$oid": "66056f9b975a4de8a4bb040b"
   },
-  {
-    "name": "Talking doll",
-    "price": 200,
-    "labels": [
-      "Art",
-      "Baby"
-    ],
-    "inStock": true
-  },
-  {
-    "name": "Teddy bear",
-    "price": 40,
-    "labels": [
-      "Battery Powered",
-      "Box game"
-    ],
-    "inStock": true
-  },
-  {
-    "name": "Lego",
-    "price": 27,
-    "labels": [
-      "Art",
-      "Doll",
-      "Baby"
-    ],
-    "inStock": false
-  },
-  {
-    "name": "Barbie",
-    "price": 18,
-    "labels": [
-      "On wheels",
-      "Outdoor",
-      "Battery Powered",
-      "Box game"
-    ],
-    "inStock": true
+  "name": "Lego",
+  "price": 26,
+  "labels": [
+    "Art",
+    "Doll",
+    "Baby"
+  ],
+  "inStock": false,
+  "owner": {
+    "_id": "6606809ff0a4b58f02558482",
+    "fullname": "Puki Ja"
   }
-]
+},
+{
+  "_id": {
+    "$oid": "66056f9b975a4de8a4bb040c"
+  },
+  "name": "Barbie",
+  "price": 18,
+  "labels": [
+    "On wheels",
+    "Outdoor",
+    "Battery Powered",
+    "Box game"
+  ],
+  "inStock": true,
+  "owner": {
+    "_id": "6606809ff0a4b58f02558482",
+    "fullname": "Puki Ja"
+  }
+},
+{
+  "_id": {
+    "$oid": "66059d3daa9b7060f51b5843"
+  },
+  "name": "ball",
+  "price": 43,
+  "labels": [
+    "Outdoor"
+  ],
+  "inStock": true,
+  "owner": {
+    "_id": "6606807df0a4b58f02558481",
+    "fullname": "Admin"
+  }
+},
+{
+  "_id": {
+    "$oid": "66066516f0a4b58f0255847f"
+  },
+  "name": "Doll",
+  "price": 22,
+  "labels": [],
+  "inStock": true,
+  "owner": {
+    "_id": "660663ccf0a4b58f0255847d",
+    "fullname": "Atar Mor"
+  }
+},
+{
+  "_id": {
+    "$oid": "6606662bf0a4b58f02558480"
+  },
+  "name": "magnet",
+  "price": 55,
+  "labels": [],
+  "inStock": true,
+  "owner": {
+    "_id": "660663ccf0a4b58f0255847d",
+    "fullname": "Atar Mor"
+  }
+}]
