@@ -9,12 +9,13 @@ async function query(filterBy, sortBy) {
     try {
         const criteria = {
             name: { $regex: filterBy.txt, $options: 'i' },
-            price: { $lte: filterBy.maxPrice },
+            price: { $lte: filterBy.maxPrice }
         }
         if (filterBy.inStock !== 'all') criteria.inStock = filterBy.inStock === 'inStock'
+        if (filterBy.labels?.length) criteria.labels = { $all: filterBy.labels }
 
-        const {type, dir} = sortBy
-        const sort = {[type]:dir}
+        const { type, dir } = sortBy
+        const sort = { [type]: dir }
 
         const collection = await dbService.getCollection('toy')
         var toys = await collection.find(criteria).sort(sort).toArray()
